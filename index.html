@@ -4,20 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox-layout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Magra:wght@700&family=Montserrat:wght@400;500;600;700&family=Tilt+Neon&family=Ubuntu:ital@1&family=Varta&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
-  <header class="header">Navigation</header>
-  <main class="main">
-    <section>Something beautiful</section>
-    <section>Something interesting</section>
-    <section>Something creative</section>
-  </main>
-  <aside>Curious to know</aside>
-  <footer>
-    <div>Beautiful logo</div>
-    <div>Address</div>
-    <div>How to find us</div>
-    <div>Social-media</div>
-  </footer>
+  <div class="general-container">
+    <header class="container header">
+        <h1><a href="#">Fabulous website</a></h1>
+        <img src="assets/logo.png" alt="logo">
+    </header>
+
+    <div class="container main-container">
+      <main class="main">
+        <article class="section">Some beautiful contents</article>
+        <article class="section">Some interesting contents</article>
+        <article class="section">Some creative contents</article>
+      </main>
+      <aside class="aside">Curious to know</aside>
+    </div>
+
+    <footer class="container footer">
+      <div class="footer-item"><img src="assets/footer-logo.png" alt="flower logo"></div>
+      <div class="footer-item">Our address</div>
+      <div class="footer-item">How to find us</div>
+      <div class="footer-item">Social-media</div>
+    </footer>
+  </div>
 </body>
 </html>

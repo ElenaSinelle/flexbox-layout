@@ -1,0 +1,125 @@
+/*general styles and normalize*/
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  font: normal normal 30px/36px 'Tilt Neon';
+  color: rgba(3, 42, 55, 1);
+}
+
+.general-container {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 10px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(3, 42, 55, 1);
+  cursor: pointer;
+}
+
+/*header styles*/
+.header {
+  flex: 0 1 10vh;
+  background: linear-gradient(90deg, rgba(249, 205, 241, 1) 0%, rgba(176, 176, 211, 0.39527632341999297) 32%, rgba(124, 244, 249, 0.6641838864452031) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  margin-left: auto;
+  transition: all ease-in 0.5s;
+}
+
+.header img:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+/*main styles*/
+.main-container {
+  flex: 1 0 auto;
+  display: flex;
+  background-color: rgba(124, 244, 249, 0.6641838864452031);
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-end;
+  gap: 10px;
+}
+
+.section {
+  flex: 1 1 20%;
+  background-color: rgba(249, 205, 241, 0.6);
+  border-radius: 10px;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-in 0.4s;
+}
+
+.section:last-of-type {
+  flex: 1 1 70%;
+}
+
+.section:hover {
+  background-color: rgba(249, 205, 241, 1);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.aside {
+  flex: 1 0 20%;
+  background-color: rgba(176, 176, 211, 0.5);
+  border-radius: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  transition: all ease-in 0.4s;
+}
+
+.aside:hover {
+  background-color: rgba(176, 176, 211, 1);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+/*footer styles*/
+.footer {
+  flex: 0 1 15%;
+  background: linear-gradient(270deg, rgba(249, 205, 241, 1) 0%, rgba(176, 176, 211, 0.5157245026917017) 70%, rgba(124, 244, 249, 0.6641838864452031) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-item {
+  flex: 0 1 23%;
+  background-color: rgba(182, 179, 214, 0.7);
+  border-radius: 10px;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-in 0.4s;
+}
+
+.footer-item:hover {
+  background-color: rgba(182, 179, 214, 1);
+  transform: scale(1.04);
+  cursor: pointer;
+}
